@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+<html>
+<!-- the title will appear on the page-->
+
+<head>
+    <title>Employee Interests Survey</title>
+</head>
+
+<body>
+
+
+    <!--Adds a heading-->
+    
+
+
+    <!-- as it is a survey form, we will need to submit the details, hence we use form -->
+    <!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+    <fieldset>
+        <legend><h1>Employee Interests Survey Form</h1></legend>
+    <form action="form.php">
+        <table>
+
+            <tr>
+                <br><br>
+                <td>Enter your name:</td>
+                <td>
+                    <!-- Input type text for small texts, specify size -->
+                    <input type="text" name="UserName" size=35 maxlength=35 value="">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your department:</td>
+                <td>
+                    <input type="text" name="Deptt" size=35 maxlength=35 value="">
+                </td>
+            </tr>
+            <tr>
+                <td>Tell us a little about yourself:</td>
+                <td>
+                    <!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+                    <textarea name="Comments" cols=30 rows=4></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Do you exercise at home?</td>
+                <td>
+                    <!-- Radio buttons help you choose one out of the many values -->
+                    <input type="radio" name="exe" value=1>Yes
+                    <input type="radio" name="exe" value=2>No
+                </td>
+            </tr>
+            <tr>
+                <td>How do you like to read about your favorite topics?</td>
+                <td>
+                    <!--Checkbox lets you select multiple options -->
+                    <input type="checkbox" name="Books">Books
+                    <input type="checkbox" name="Web">Online resources
+                    <input type="checkbox" name="Phone">Phone apps
+                    <input type="checkbox" name="Magazines">Magazines
+                </td>
+            </tr>
+            <tr>
+                <td>What genre of movies do you like?</td>
+                <td>
+                    <!--Select box lets you choose one of the multiple dropdown options-->
+                    <select name="moviepref">
+                        <option value=1>comedy</option>
+                        <option value=2>romance</option>
+                        <option value=3>thriller</option>
+                        <option value=4>horror</option>
+                        <option value=5>biopic</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br><br>
+                    <!--submits the information entered in the form by the user -->
+                    <input type=submit value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+
+</html>
